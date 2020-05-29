@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/admin21/cicd/_apis/build/status/CI?branchName=master)](https://dev.azure.com/admin21/cicd/_build/latest?definitionId=1&branchName=master)
+
 # monolith
 참고:  
 Order 와 product 는 N:1 (다대일) 관계이다.  
@@ -19,7 +21,3 @@ http PATCH localhost:8088/deliveries/1 deliveryState=DeliveryCompleted
 
 -- 주문 취소 하기
 http PATCH localhost:8088/orders/1 state=OrderCancelled
-
-
-
-[![Build Status](https://dev.azure.com/admin21/cicd/_apis/build/status/CI?branchName=master)](https://dev.azure.com/admin21/cicd/_build/latest?definitionId=1&branchName=master)
