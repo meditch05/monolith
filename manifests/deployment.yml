@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: meditchmonolith 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: meditchmonolith 
+    spec:
+      containers:
+        - name: meditchmonolith 
+          image: admin21acr.azurecr.io/meditchmonolith
+          ports:
+          - containerPort: 8080
